@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vaibhav's Webpage Layout</title>
+    <style>
+        /* Background image for the whole body */
+        body {
+            background-image: url("your-background-image-url.jpg");
+            /* Replace this with your image URL */
+            background-size: cover;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Header style */
+        header {
+            background: lightslategray;
+            /* Green background */
+            color: white;
+            padding: 10px 20px;
+            /* Padding for header */
+            text-align: center;
+            /* Center text */
+        }
+
+        /* Navigation styles */
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            margin: 15px;
+            text-decoration: none;
+        }
+
+        /* Table styles */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: center;
+            text-shadow: #333;
+            margin: 5px;
+            padding: 5px;
+            table-layout: fixed;
+        }
+
+        tr:nth-child(odd) {
+            background-color: #f2f2f2;
+            /* Odd row color */
+        }
+
+        tr:nth-child(even) {
+            background-color: #ffffff;
+            /* Even row color */
+        }
+
+        /* Form styles */
+        .login-form {
+            box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+            height: 150vh;
+            /* Full viewport height */
+            margin: 0;
+            /* Remove default margin */
+            padding: 0;
+            /* Remove default padding */
+            background-color: white;
+            /* Set background color */
+            display: flex;
+            /* Use flexbox for centering */
+            flex-direction: column;
+            /* Stack elements vertically */
+            justify-content: center;
+            /* Center horizontally */
+            align-items: center;
+            /* Center vertically */
+        }
+
+        /* Styling for form labels */
+        label {
+            display: block;
+            /* Make labels block elements */
+            margin-bottom: 5px;
+            /* Space below labels */
+            color: black;
+            /* Label text color */
+        }
+
+        /* Styling for input fields */
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="password"],
+        input[type="file"],
+        select {
+            margin-bottom: 15px;
+            /* Space below input fields */
+            border: 1px solid grey;
+            /* Border for input fields */
+            border-radius: 4px;
+            /* Rounded corners for input fields */
+        }
+
+        .buttons {
+            margin: 20px 0;
+        }
+
+        .iframe-div {
+            margin: 20px 0;
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+
+        /* Styling for section headings */
+        h2 {
+            color: black;
+            /* Heading text color */
+            /* background: lightslategray; /* Green background */
+            padding: 10px 20px;
+            /* Padding for header */
+            /* text-align: center; /* Center text */
+        }
+
+        /* Styling for the footer */
+        footer {
+            margin-top: 20px;
+            /* Space above footer */
+            text-align: center;
+            /* Center align footer text */
+            font-size: 0.9cm;
+            /* Smaller font size for footer */
+            background-color: lightgrey;
+            color: black;
+            /* Footer text color */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Welcome to My Webpage</h1>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="#table">Table</a>
+        <a href="#login">Login</a>
+        <a href="#iframe">Iframe</a>
+    </nav>
+
+    <!-- Main Content -->
+    <div id="table">
+        <h2>Odd and Even List Table</h2>
+        <table>
+            <tr>
+                <th>Item Number</th>
+                <th>Item Name</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Item One</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Item Two</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Item Three</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Item Four</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Item Five</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Login Form Section -->
+    <div id="login" class="login-form" style="margin: 5px">
+        <h2>Basic Login Form</h2>
+        <form action="#" method="post" enctype="multipart/form-data">
+            <!-- Form element with POST method and file upload -->
+            <label for="firstName">First Name:</label>
+            <!-- Label for first name -->
+            <input type="text" id="firstName" name="firstName" required placeholder="Enter your first name" /><br />
+            <!-- Input for first name -->
+
+            <label for="lastName">Last Name:</label>
+            <!-- Label for last name -->
+            <input type="text" id="lastName" name="lastName" required placeholder="Enter your last name" /><br />
+            <!-- Input for last name -->
+
+            <label for="email">Email:</label>
+            <!-- Label for email -->
+            <input type="email" id="email" name="email" required placeholder="Enter your email" /><br />
+            <!-- Input for email -->
+
+            <label for="phone">Phone Number:</label>
+            <!-- Label for phone number -->
+            <input type="tel" id="phone" name="phone" required placeholder="Enter your phone number"
+                pattern="[0-9]{10}" /><br />
+            <!-- Input for phone number -->
+
+            <label for="position">Position Applied For:</label>
+            <!-- Label for position -->
+            <select id="position" name="position" required>
+                <!-- Dropdown for position -->
+                <option value="">Select a position</option>
+                <!-- Default option -->
+                <option value="developer">Developer</option>
+                <!-- Option for Developer -->
+                <option value="designer">Designer</option>
+                <!-- Option for Designer -->
+                <option value="manager">Manager</option>
+                <!-- Option for Manager -->
+            </select><br />
+
+            <label for="resume">Upload Resume:</label>
+            <!-- Label for resume upload -->
+            <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required /><br />
+            <!-- Input for file upload -->
+
+            <label for="password">Password:</label>
+            <!-- Label for password -->
+            <input type="password" id="password" name="password" required placeholder="Enter your password" /><br />
+            <!-- Input for password -->
+
+            <label for="confirmPassword">Confirm Password:</label>
+            <!-- Label for confirm password -->
+            <input type="password" id="confirmPassword" name="confirmPassword" required
+                placeholder="Confirm your password" /><br />
+            <!-- Input for confirm password -->
+
+            <label for="Birthdate">Date:</label>
+            <!-- Label for date-->
+            <input type="date" id="Birthdate" name="Birthdate" required placeholder="Enter Your BirthDate" /><br /><br>
+            <!-- Input for date -->
+
+            <label for="time">Time:</label>
+            <!-- Label for time -->
+            <input type="time" id="time" name="time" required placeholder="Enter the Time" /><br /><br>
+            <!-- Input for time -->
+
+            <label for="color">Color:</label>
+            <!-- Label for color -->
+            <input type="color" id="color" name="color" required placeholder="Enter Color" /><br /><br>
+            <!-- Input for color -->
+
+            <label>
+                <input type="checkbox" name="subscribe" value="yes"> Subscribe to newsletter <br><br>
+            </label>
+
+            <label for="submitButton">Click the image to submit:</label>
+            <input type="image" id="submitButton" src="submitbutton.png" alt="Submit" width="200" height="100"><br><br>
+
+            <h2>Choose Your Favorite Fruit</h2>git
+            <label>
+                <input type="radio" name="fruit" value="apple"> Apple
+            </label><br>
+            <label>
+                <input type="radio" name="fruit" value="banana"> Banana
+            </label><br>
+            <label>
+                <input type="radio" name="fruit" value="orange"> Orange
+            </label><br>
+            <!-- /* <input type="submit" value="Submit"><br><br> */ -->
+
+            <label for="volume">Volume:</label>
+            <input type="range" id="volume" name="volume" min="0" max="100" value="50" step="1">
+            <span id="volumeValue">50</span><br><br>
+
+            <label for="search">Search:</label>
+            <input type="search" id="search" name="query" placeholder="Search here..."> <br><br>
+
+            <div class="buttons">
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </div>    
+        </form>
+
+        <form action="/submit-url" method="post">
+            <label for="website">Website URL:</label>
+            <input type="url" id="website" name="website" required>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <!-- Iframe Section -->
+    <div id="iframe" class="iframe-div">
+        <h2>Iframe Section</h2>
+        <iframe src="https://www.youtube.com/embed/vYelTr1uQmA?si=NdvJ0Ev4Xk_a24M2" width="100%" height="300px"></iframe><br/>
+
+        <iframe src="https://www.w3schools.com/" width="100%" height="300px"></iframe><br/>
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15127.789093581028!2d73.99475595000001!3d18.5764157!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c37c101a601b%3A0xa93da586ac881245!2sLifeline%20Hospital!5e0!3m2!1sen!2sin!4v1742352199929!5m2!1sen!2sin" width="100%" height="300px"></iframe>
+        <br/>
+    </div>
+
+    <!-- Footer Section with Essential Attributes -->
+    <footer>
+        <small>© 2023 My Webpage. All rights reserved.</small>
+    </footer>
+</body>
+
+</html>

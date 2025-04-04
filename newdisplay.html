@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            gap: 10px;
+            justify-content: right;
+            align-items: center; 
+            width: 600px;
+            height: 600px;
+            margin: 20px;
+            /*size-adjust: auto;*/
+            background-color: lightblue;
+            border: 1px solid black;
+            position: relative;
+        }
+        .box1 {
+            flex-shrink: 1;
+            flex-grow: 1;
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            background-color: rgb(152, 18, 18);
+        }
+        .box2 {
+            width: 100px;
+            height: 100px;
+            flex-grow: 2;
+            background-color: rgb(156, 16, 158);
+            /*visibility: hidden;*/
+            /*display: none;*/
+            position: relative;
+            top: 30px;
+        }
+        .box3 {
+            width: 100px;
+            height: 100px;
+            flex-grow: 4;
+            background-color: rgb(152, 136,18);
+        }
+        .box4 {
+            width: 100px;
+            height: 100px;
+            flex-grow: 2;
+            flex-shrink: 0.5;
+            background-color: rgb(18, 152, 18);
+        }
+
+        .box5 {
+            width: 100px;
+            height: 100px;
+            flex-grow: 2;
+            flex-shrink: 0.5;
+            background-color: rgb(25, 152, 25);
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1">Box 1</div>
+        <div class="box2">Box 2</div>
+        <div class="box3">Box 3</div>
+        <div class="box4">Box 4</div>
+        <div class="box5">Box 5</div>
+           
+    </div>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!-- Character encoding for the document -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive design for mobile devices -->
+    <title>Job Application Registration</title> <!-- Title of the webpage -->
+    <style>
+        /* Basic styling for the body */
+        body {
+            font-family: Arial, sans-serif; /* Set the font for the page */
+            margin: 0; /* Remove default margin */
+            padding: 0; /* Remove default padding */
+            background-color: white; /* Set background color */
+            display: flex; /* Use flexbox for centering */
+            flex-direction: column; /* Stack elements vertically */
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+            height: 100vh; /* Full viewport height */
+        }
+
+        /* Styling for the header */
+        header {
+            text-align: center; /* Center align text */
+            margin-bottom: 20px; /* Space below header */
+        }
+
+        /* Styling for the form section */
+        section {
+            max-width: 500px; /* Maximum width of the form */
+            padding: 20px; /* Padding inside the form */
+            background-color: white; /* White background for the form */
+            border-radius: 8px; /* Rounded corners */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 1.0); /* Shadow effect */
+        }
+
+        /* Styling for form labels */
+        label {
+            display: block; /* Make labels block elements */
+            margin-bottom: 5px; /* Space below labels */
+            color: black; /* Label text color */
+        }
+
+        /* Styling for input fields */
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="password"],
+        input[type="file"],
+        select {
+            width: 92%; /* Full width of the input fields */
+            padding: 10px; /* Padding inside input fields */
+            margin-bottom: 15px; /* Space below input fields */
+            border: 1px solid grey; /* Border for input fields */
+            border-radius: 4px; /* Rounded corners for input fields */
+        }
+
+        /* Styling for the submit button */
+        input[type="submit"] {
+            background-color: brown; /* Button background color */
+            color: white; /* Button text color */
+            border: none; /* Remove border */
+            padding: 10px; /* Padding inside button */
+            border-radius: 5px; /* Rounded corners for button */
+            cursor: pointer; /* Change cursor to pointer on hover */
+            width: 100%; /* Full width of the button */
+        }
+
+        /* Hover effect for the submit button */
+        input[type="submit"]:hover {
+            background-color: green; /* Darker background on hover */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Job Application Registration</h1> <!-- Main title of the form -->
+    </header>
+
+    <section>
+        <form action="#" method="post" enctype="multipart/form-data"> <!-- Form element with POST method and file upload -->
+            <label for="firstName">First Name:</label> <!-- Label for first name -->
+            <input type="text" id="firstName" name="firstName" required placeholder="Enter your first name"> <!-- Input for first name -->
+
+            <label for="lastName">Last Name:</label> <!-- Label for last name -->
+            <input type="text" id="lastName" name="lastName" required placeholder="Enter your last name"> <!-- Input for last name -->
+
+            <label for="email">Email:</label> <!-- Label for email -->
+            <input type="email" id="email" name="email" required placeholder="Enter your email"> <!-- Input for email -->
+
+            <label for="phone">Phone Number:</label> <!-- Label for phone number -->
+            <input type="tel" id="phone" name="phone" required placeholder="Enter your phone number" pattern="[0-9]{10}"> <!-- Input for phone number -->
+
+            <label for="position">Position Applied For:</label> <!-- Label for position -->
+            <select id="position" name="position" required> <!-- Dropdown for position -->
+                <option value="">Select a position</option> <!-- Default option -->
+                <option value="developer">Developer</option> <!-- Option for Developer -->
+                <option value="designer">Designer</option> <!-- Option for Designer -->
+                <option value="manager">Manager</option> <!-- Option for Manager -->
+            </select>
+
+            <label for="resume">Upload Resume:</label> <!-- Label for resume upload -->
+            <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required> <!-- Input for file upload -->
+
+            <label for="password">Password:</label> <!-- Label for password -->
+            <input type="password" id="password" name="password" required placeholder="Enter your password"> <!-- Input for password -->
+
+            <label for="confirmPassword">Confirm Password:</label> <!-- Label for confirm password -->
+            <input type="password" id="confirmPassword" name="confirmPassword" required placeholder="Confirm your password"> <!-- Input for confirm password -->
+
+            <input type="submit" value="Register"> <!-- Submit button -->
+        </form>
+    </section>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>9 Boxes</title>
+    <style>
+        /* Basic reset for margin and padding */
+        body, html {
+            margin: 0; /* Remove default margin */
+            padding: 0; /* Remove default padding */
+            box-sizing: border-box; /* Include padding and border in element's total width and height */
+            height: 100%;
+        }
+
+        /* Container to hold the boxes */
+        .container {
+            display: flex; /* Use flexbox for layout */
+            flex-wrap: wrap; /* Allow wrapping of items */
+            justify-content: space-between; /* Evenly distribute space between boxes */
+            align-items: center; /* Center items vertically */
+            height: 100vh; /* Full viewport height */
+            padding: 20px; /* Add some padding around the edges */
+            box-sizing: border-box; /* Include padding in width/height calculations */
+            background-color: bisque; /* Background color for visibility */
+            border: 2px solid darkblue; /* Border around the container */
+        }
+
+        /* Styling for each box */
+        .box {
+            width: 30%; /* Set width for each box */
+            height: 30%; /* Set height for each box */
+            background-color: lightblue; /* Background color for visibility */
+            border: 2px solid darkblue; /* Border around boxes */
+            display: flex; /* Use flexbox for content alignment */
+            justify-content: center; /* Center content horizontally */
+            align-items: center; /* Center content vertically */
+            margin: 10px; /* Margin between boxes */
+            box-sizing: border-box; /* Include border in width/height calculations */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Top row (3 boxes) -->
+        <div class="box">Top Left</div>
+        <div class="box">Top Center</div>
+        <div class="box">Top Right</div>
+
+        <!-- Middle row (3 boxes) -->
+        <div class="box">Middle Left</div>
+        <div class="box">Middle Center</div>
+        <div class="box">Middle Right</div>
+
+        <!-- Bottom row (3 boxes) -->
+        <div class="box">Bottom Left</div>
+        <div class="box">Bottom Center</div>
+        <div class="box">Bottom Right</div>
+    </div>
+</body>
+</html>

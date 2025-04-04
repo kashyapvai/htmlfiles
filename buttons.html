@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fixed Position Buttons</title>
+    <style>
+        /* Style for the fixed navigation container */
+        .navbar {
+            position: fixed; /* Fixes the position on the screen */
+            top: 0; /* Aligns it to the top */
+            right: 0; /* Aligns it to the right */
+            background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+            padding: 10px; /* Padding around the buttons */
+            border-radius: 5px; /* Rounded corners */
+        }
+
+        /* Style for each button */
+        .navbar a {
+            background-color: #4CAF50; /* Green background */
+            color: white; /* White text color */
+            padding: 10px 15px; /* Padding inside the buttons */
+            text-decoration: none; /* Removes underline from links */
+            margin: 5px; /* Space between buttons */
+            border-radius: 3px; /* Rounded corners */
+            transition: background-color 0.3s; /* Smooth transition on hover */
+        }
+
+        /* Hover effect for buttons */
+        .navbar a:hover {
+            background-color: #45a049; /* Darker green on hover */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation bar with fixed buttons -->
+    <div class="navbar">
+        <!-- Home Button -->
+        <a href="#home" title="Go to Home">Home</a>
+        <!-- About Button -->
+        <a href="#about" title="About Us">About</a>
+        <!-- Services Button -->
+        <a href="#services" title="Our Services">Services</a>
+        <!-- Contact Button -->
+        <a href="#contact" title="Contact Us">Contact</a>
+        <!-- Help Button -->
+        <a href="#help" title="Need Help?">Help</a>
+    </div>
+
+    <!-- Main content to demonstrate scrolling functionality -->
+    <div style="padding-top: 60px;">
+        <h1 id="home">Home Section</h1>
+        <p>Content for the Home section...</p>
+        <h1 id="about">About Section</h1>
+        <p>Content for the About section...</p>
+        <h1 id="services">Service Section</h1>
+        <p>Details about our services...</p>
+        <h1 id="contact">Contact Section</h1>
+        <p>How to contact us...</p>
+        <h1 id="help">Help Section</h1>
+        <p>Frequently asked questions...</p>
+    </div>
+
+</body>
+</html>

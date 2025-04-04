@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unordered List with Stars</title>
+    <style>
+        ul {
+            list-style-type: none; /* Remove default bullets */
+            padding: 0; /* Remove default padding */
+            background-color: lightblue; /* Change background color */
+            padding: 10px; /* Add some padding */
+            border-radius: 5px; /* Optional: rounded corners */
+        }
+
+        li {
+            position: relative; /* Positioning for the star */
+            padding-left: 20px; /* Space for the star */
+        }
+
+        li::before {
+            content: "★"; /* Star character */
+            position: absolute; /* Position the star */
+            left: 0; /* Align to the left */
+            color: gold; /* Star color */
+            font-size: 20px; /* Star size */
+        }
+    </style>
+</head>
+<body>
+    <h1>My Favorite Fruits</h1>
+    <ul>
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>Cherry</li>
+        <li>Grapes</li>
+        <li>Mango</li>
+    </ul>
+</body>
+</html>

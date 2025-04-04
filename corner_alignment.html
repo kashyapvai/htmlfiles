@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corner Alignment</title>
+    <style>
+        body {
+            display: flex; /* Using flexbox for body layout */
+            justify-content: center; /* Center content horizontally */
+            align-items: center; /* Center content vertically */
+            height: 100vh; /* Full viewport height */
+            margin: 0; /* No default margin */
+            position: relative; /* Positioning context for corner divs */
+        }
+        .corner-container {
+            display: flex; /* Flexbox for the container */
+            flex-wrap: wrap; /* Allow wrapping of elements */
+            width: 600px; /* Fixed width for the container */
+            height: 600px; /* Fixed height for the container */
+        }
+        .corner {
+            width: 50%; /* Each corner takes half the width */
+            height: 50%; /* Each corner takes half the height */
+            box-sizing: border-box; /* Include padding in width and height */
+        }
+        /* Top-left corner */
+        .top-left {
+            width: 100px;
+            height: 100px;
+            flex-grow: 2;
+            background-color: rgb(156, 16, 158); /* Background color for visibility */
+            /*background-color: red; /* Background color for visibility */
+        }
+        /* Top-center corner */
+        .top-center {
+            background-color: green; /* Background color for visibility */
+        }
+        /* Top-right corner */
+        .top-right {
+            background-color: blue; /* Background color for visibility */
+        }
+        /* Middle-left corner */
+        .middle-left {
+            background-color: yellow; /* Background color for visibility */
+        }
+        /* Center corner */
+        .center {
+            background-color: purple; /* Background color for visibility */
+        }
+        /* Middle-right corner */
+        .middle-right {
+            background-color: orange; /* Background color for visibility */
+        }
+        /* Bottom-left corner */
+        .bottom-left {
+            background-color: cyan; /* Background color for visibility */
+        }
+        /* Bottom-center corner */
+        .bottom-center {
+            background-color: pink; /* Background color for visibility */
+        }
+        /* Bottom-right corner */
+        .bottom-right {
+            background-color: brown; /* Background color for visibility */
+        }
+    </style>
+</head>
+<body>
+    <div class="corner-container">
+        <div class="corner top-left"></div> <!-- Top-left corner -->
+        <div class="corner top-center"></div> <!-- Top-center corner -->
+        <div class="corner top-right"></div> <!-- Top-right corner -->
+        <div class="corner middle-left"></div> <!-- Middle-left corner -->
+        <div class="corner center"></div> <!-- Center corner -->
+        <div class="corner middle-right"></div> <!-- Middle-right corner -->
+        <div class="corner bottom-left"></div> <!-- Bottom-left corner -->
+        <div class="corner bottom-center"></div> <!-- Bottom-center corner -->
+        <div class="corner bottom-right"></div> <!-- Bottom-right corner -->
+    </div>
+</body>
+</html>

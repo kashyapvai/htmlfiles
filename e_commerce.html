@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!-- Character encoding for the document -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive design for mobile devices -->
+    <title>Online Store</title> <!-- Title of the webpage -->
+    <style>
+        /* Basic styling for the body */
+        body {
+            font-family: Arial, sans-serif; /* Set the font for the page */
+            margin: 0; /* Remove default margin */
+            padding: 0; /* Remove default padding */
+            background-color: whitesmoke; /* Set background color */
+        }
+
+        /* Styling for the header */
+        header {
+            background-color: darkgoldenrod; /* Header background color */
+            color: white; /* Header text color */
+            padding: 20px; /* Padding around header */
+            text-align: center; /* Center align text */
+        }
+
+        /* Styling for the navigation bar */
+        nav {
+            background-color: orange; /* Navigation background color */
+            padding: 10px; /* Padding inside navigation */
+            display: flex; /* Use flexbox for layout */
+            justify-content: center; /* Center align navigation items */
+        }
+
+        /* Styling for navigation links */
+        nav a {
+            margin: 0 15px; /* Margin around links */
+            text-decoration: none; /* Remove underline from links */
+            color: white; /* Link color */
+            padding: 10px 15px; /* Padding around links */
+            border-radius: 5px; /* Rounded corners */
+            transition: background-color 0.3s; /* Smooth background transition */
+        }
+
+        /* Hover effect for navigation links */
+        nav a:hover {
+            background-color: gray; /* Change background on hover */
+        }
+
+        /* Styling for the main content area */
+        .content {
+            display: flex; /* Use flexbox for layout */
+            padding: 20px; /* Padding inside content area */
+        }
+
+        /* Styling for the main product area */
+        .products {
+            flex: 3; /* Take up more space than side banners */
+            display: grid; /* Use grid layout for products */
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive grid */
+            gap: 30px; /* Space between grid items */
+        }
+
+        /* Styling for individual product cards */
+        .product {
+            border: 1px solid white; /* Border around product */
+            border-radius: 5px; /* Rounded corners */
+            padding: 10px; /* Padding inside product card */
+            text-align: center; /* Center align text */
+            background-color: white; /* White background for product card */
+        }
+
+        /* Styling for images */
+        .product img {
+            max-width: 100%; /* Responsive image */
+            height: auto; /* Maintain aspect ratio */
+        }
+
+        /* Styling for side banners */
+        .sidebar {
+            flex: 1; /* Take up less space than main content */
+            padding: 20px; /* Padding inside sidebar */
+            background-color: whitesmoke; /* Sidebar background color */
+            margin-left: 20px; /* Space between content and sidebar */
+        }
+
+        /* Styling for the footer */
+        footer {
+            background-color: darkgoldenrod; /* Footer background color */
+            color: white; /* Footer text color */
+            text-align: center; /* Center align text */
+            padding: 10px; /* Padding around footer */
+            position: relative; /* Positioning for footer */
+            bottom: 0; /* Stick to the bottom */
+            width: 100%; /* Full width */
+        }
+
+        /* Styling for the rolling banner */
+        .banner {
+            width: 100%; /* Full width of the banner */
+            overflow: hidden; /* Hide overflow */
+            position: relative; /* Positioning for banner */
+        }
+
+        /* Styling for the banner images */
+        .banner img {
+            width: 30%; /* Full width of the image */
+            animation: slide 10s infinite; /* Animation for sliding effect */
+        }
+
+        /* Keyframes for sliding effect */
+        @keyframes slide {
+            0% { transform: translateX(0); }
+            20% { transform: translateX(0); }
+            25% { transform: translateX(-100%); }
+            45% { transform: translateX(-100%); }
+            50% { transform: translateX(-200%); }
+            70% { transform: translateX(-200%); }
+            75% { transform: translateX(0); }
+            100% { transform: translateX(0); }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Vaibhav's Online Store</h1> <!-- Main title of the website -->
+    </header>
+
+    <nav>
+        <a href="#">Home</a> <!-- Link to Home -->
+        <a href="#">Products</a> <!-- Link to Products -->
+        <a href="#">Deals</a> <!-- Link to Deals -->
+        <a href="#">Contact</a> <!-- Link to Contact -->
+    </nav>
+
+    <div class="banner">
+        <img src="https://img.freepik.com/free-vector/flat-black-friday-twitch-cover_23-2149103021.jpg" alt="Banner 1"> <!-- First banner image -->
+        <img src="https://m.media-amazon.com/images/G/31/img20/AmazonLaunchpad/2022/Jupiter/phase2/gateway/phase4/Fashion--accessories_mob.jpg" alt="Banner 2"> <!-- Second banner image -->
+        <img src="https://www.intelligencenode.com/blog/wp-content/uploads/2019/06/Prime-day.jpg" alt="Banner 3"> <!-- Third banner image -->
+    </div>
+
+    <div class="content">
+        <div class="products">
+            <div class="product">
+                <img src="https://marketplace.canva.com/EAFy-Kja1dg/1/0/1600w/canva-white-and-black-simple-modern-earbuds-amazon-product-image-kBO8rvpqdlw.jpg" alt="Product 1"> <!-- Product image -->
+                <h2>Product 1</h2> <!-- Product title -->
+                <p>$19.99</p> <!-- Product price -->
+                <button>Add to Cart</button> <!-- Button to add product to cart -->
+            </div>
+            <div class="product">
+                <img src="https://marketplace.canva.com/EAFy-0Fi_GI/1/0/1600w/canva-pink-and-white-gradient-aesthetic-bodycare-new-product-amazon-product-image-gmLqsMikDLM.jpg" alt="Product 2"> <!-- Product image -->
+                <h2>Product 2</h2> <!-- Product title -->
+                <p>$29.99</p> <!-- Product price -->
+                <button>Add to Cart</button> <!-- Button to add product to cart -->
+            </div>
+            <div class="product">
+                <img src="https://marketplace.canva.com/EAEoy6MwrL4/1/0/1600w/canva-new-cosmetic-product-instagram-post-FDZBAgvrSWc.jpg" alt="Product 3"> <!-- Product image -->
+                <h2>Product 3</h2> <!-- Product title -->
+                <p>$39.99</p> <!-- Product price -->
+                <button>Add to Cart</button> <!-- Button to add product to cart -->
+            </div>
+            <div class="product">
+                <img src="https://marketplace.canva.com/EAGGly5zuUY/1/0/1600w/canva-dark-blue-and-yellow-grunge-new-arrival-sneakers-amazone-product-image-AhgpswM7RSY.jpg" alt="Product 4"> <!-- Product image -->
+                <h2>Product 4</h2> <!-- Product title -->
+                <p>$49.99</p> <!-- Product price -->
+                <button>Add to Cart</button> <!-- Button to add product to cart -->
+            </div>
+            <!-- Add more products as needed -->
+        </div>
+
+        <aside class="sidebar">
+            <h2>Advertisements</h2> <!-- Title for advertisements -->
+            <p>Ad Banner 1</p> <!-- Placeholder for advertisement -->
+            <p>Ad Banner 2</p> <!-- Placeholder for advertisement -->
+            <p>Ad Banner 3</p> <!-- Placeholder for advertisement -->
+        </aside>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Online Store. All rights reserved.</p> <!-- Footer text -->
+    </footer>
+</body>
+</html>
