@@ -1,0 +1,70 @@
+
+body {
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+h1 {
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
+p {
+    text-align: center;
+    font-family:  "comic sans ms";
+    font-weight: bold;
+    font-size: 30px;
+    font-style: italic;
+    color: red;
+    text-transform: capitalize;
+    word-spacing: 10px;
+    letter-spacing: -1px;
+    padding: 10px;
+    margin: 10px;
+}
+.main{
+    width: 400px;
+    height: 200px;
+    background-color: green;
+}
+.row1{
+    height: 50px;
+    width: 400px;
+    background-color: blue;
+}
+.row1col {
+    width: 100px;
+    height: 50px;
+    background-color: red;
+    float: left;
+}
+.row2{
+    height: 150px;
+    width: 400px;
+    background-color: yellow;
+}
+.row2col1 {
+    height: 150px;
+    width: 150px;
+    background-color: pink;
+    float: left;
+}
+.row2col2 {
+    height: 150px;
+    width: 250px;
+    background-color: orange;
+    float: right;
+}
+
+div p {
+    font-size: 10px;
+    font-weight: bold;
+    font-family: "comic sans ms";
+    text-align: center;
+    padding: 5px;
+    margin: 5px;
+}
+
+#home {
+    color: orange;
+}
